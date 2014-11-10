@@ -1,5 +1,5 @@
 span.jlcal_jevents_time {
-	
+
 }
 
 span.jlcal_jevents_title {
@@ -7,7 +7,7 @@ span.jlcal_jevents_title {
 }
 
 span.jlcal_jevents_location {
-	
+
 }
 
 .jlcal_matchrow tr>td {
@@ -86,7 +86,7 @@ td.jlcheaderArrow { /*td the style for the header link arrows */
 
 a.jlcheaderArrow { /*link style for the header link arrows*/
 	font: bold 18px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
-	color: #3BB9FF;
+	color: #9CBA5D;
 	text-align: center;
 	text-decoration: none;
 }
@@ -108,16 +108,18 @@ a.jlcCalendarDay {
 	/* style for a normal link in the calendar (that is not in the actual day) */
 	text-decoration: underline;
 	font: bold 12px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
-	color: #DF9496;
+	background-color: #9CBA5D;
+	color: #FFF;
+	padding: 2px;
 	text-decoration: none;
 	font-weight: bold;
 	display: block;
 }
 
 td.jlcCalendarToday { /* the style for Today day */
-	color: #F6F4DA;
+	color: #9CBA5D;
 	font-weight: bold;
-	background: #FAAFBE;
+	/*background: #9CBA5D;*/
 }
 
 a.jlcCalendarToday {
@@ -132,7 +134,7 @@ a.jlcCalendarToday {
 }
 
 td.jlcal_matchdate {
-	
+
 }
 
 td.jlcal_hometeam {
@@ -163,4 +165,9 @@ td.jlcal_awayteam img {
 
 td.jlcal_result {
 	white-space: nowrap;
+}
+
+table.jlcCalendar tbody tr td {
+	margin: 0;
+	padding: 2px 4px;
 }

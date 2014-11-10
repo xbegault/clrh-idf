@@ -5,7 +5,7 @@
 # Copyright (C) 2007-2013 Gavick.com. All Rights Reserved.
 # License: Copyrighted Commercial Software
 # Website: http://www.gavick.com
-# Support: support@gavick.com 
+# Support: support@gavick.com
 */
 
 /* Basic elements */
@@ -254,7 +254,7 @@ body[data-layout="left"] .gkPage { margin: 0!important; }
 	margin-top: 108px;
 	width: 52px;
 	color: #797979;
-	
+
 }
 #gkSearch + #gkSocial a:first-child { border-top: none; }
 #gkSearch + #gkSocial { margin-top: 0; }
@@ -589,7 +589,7 @@ div.content { clear: both; }
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 20px;
-	padding: 0 0 30px;
+	/*padding: 0 0 30px;*/
 	text-transform: uppercase;
 }
 /* noborder suffix */
