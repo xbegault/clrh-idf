@@ -205,4 +205,8 @@ $tpl_page_suffix = $this->page_suffix != '' ? ' class="'.$this->page_suffix.'"' 
 		
 	<jdoc:include type="modules" name="debug" />
 </body>
+<?php
+$doc = JFactory::getDocument();
+$doc->addStyleSheet(JUri::base().'modules/mod_joomleague_calendar/assets/css/mod_joomleague_calender.css');
+?>
 </html>

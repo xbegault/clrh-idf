@@ -30,6 +30,7 @@ if($this->API->get('typography', '1') == '1') {
 if($this->API->get("css_override", '0')) {
 	$this->API->addCSS($this->API->URLtemplate() . '/css/override.css');
 }
+$this->API->addCSS($this->API->URLtemplate().'/css/joomleague/custom.css');
 
 $this->API->addCSSRule($this->API->get('css_custom', ''));
 
@@ -86,7 +87,6 @@ if($this->API->get('css_compression', '0') == 1 || $this->API->get('css_cache', 
 if($this->API->get('js_compression', '0') == 1 ) {
 	$this->cache->registerJSCompression();
 }
-
 ?>
 
 <!--[if IE 9]>

@@ -1,0 +1,36 @@
+a.jlcCalendarDay {
+	font: bold 12px sans-serif !important;
+}
+
+table.jlcCalendar {
+	font: normal 12px sans-serif !important;
+}
+
+table.jlcCalendar tbody tr td {
+	margin: 0;
+	padding: 2px 4px;
+}
+
+td.jlcCalendarToday { /* the style for Today day */
+	color: #9CBA5D !important;
+	font-weight: bold !important;
+	background-color: transparent !important;
+}
+
+a.jlcCalendarDay {
+	background-color: #9CBA5D !important;
+	color: #FFF !important;
+	padding: 2px !important;
+}
+
+a.jlcheaderArrow {
+	color: #9CBA5D !important;
+}
+
+div.joomleague  span, div.joomleague a {
+	color: #000 !important;
+}
+
+div.joomleague  span:hover, div.joomleague  a:hover {
+	color: #FFF !important;
+}
