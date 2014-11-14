@@ -541,7 +541,7 @@ a#gkToolsDec { background-position: 6px 50%; }
 	font-size: 14px;
 	line-height: 1.6;
 	margin: 0 0 20px 0;
-	padding: 20px;
+	/*padding: 20px;*/
 	width: 100%;
 }
 #gkInset .box,

@@ -126,8 +126,8 @@ border-radius: 2px;
   margin-left: 1em;
 }
 #gkContentWrap > section:first-child {
-  border-top: 1px solid #e5e5e5;
-  padding-top:  1em;
+  /*border-top: 1px solid #e5e5e5;*/
+  padding-top:  .5em;
 }
 
 #gkContentWrap + #gkSidebar {

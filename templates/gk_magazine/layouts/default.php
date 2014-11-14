@@ -72,11 +72,15 @@ $tpl_page_suffix = $this->page_suffix != '' ? ' class="'.$this->page_suffix.'"' 
 		    <?php if(($this->API->get('reg_link') == '1' && $userID == 0) || $this->API->modules('login')) : ?>
 		    <div id="gkUserArea">
 		    	<?php if($this->API->modules('login')) : ?>
-		    	<a href="<?php echo $this->API->get('login_url', 'index.php?option=com_users&view=login'); ?>" id="gkLogin"><?php echo ($userID == 0) ? JText::_('TPL_GK_LANG_LOGIN') : JText::_('TPL_GK_LANG_LOGOUT'); ?><i class="gk-icon-arrow"></i></a>
+				<?php if ($userID != 0): ?>
+					<a href="<?php echo 'index.php/component/users/profile'; ?>">Mon Profil<i class="gk-icon-arrow"></i></a>
+				<?php endif; ?>
+		    	<a href="<?php echo $this->API->get('login_url', 'index.php?option=com_users&view=login'); ?>" id="gkLogin"><?php echo ($userID == 0) ? /*JText::_('TPL_GK_LANG_LOGIN')*/ 'Connexion' : 'Déconnexion'/*JText::_('TPL_GK_LANG_LOGOUT')*/; ?><i class="gk-icon-arrow"></i></a>
 		    	<?php endif; ?>
+
 		    	
 		    	<?php if($this->API->get('reg_link') == '1' && $userID == 0) : ?>
-		    	<a href="<?php echo $this->API->get('reg_url', '#'); ?>" id="gkRegister"><?php echo JText::_('TPL_GK_LANG_REGISTER'); ?><i class="gk-icon-arrow"></i></a>
+		    	<a href="<?php echo $this->API->get('reg_url', '#'); ?>" id="gkRegister"><?php echo "S'inscrire"/*JText::_('TPL_GK_LANG_REGISTER');*/ ?><i class="gk-icon-arrow"></i></a>
 		    	<?php endif; ?>
 		    </div>
 		    <?php endif; ?>

@@ -102,7 +102,7 @@ input[type="button"],
 .readon,
 .pagination ul li a,
 .pagination ul li span {
-	background: #4d90fe;
+	background: #9cba5d;
 }
 button:hover,
 .button:hover,
@@ -121,7 +121,7 @@ input[type="button"]:hover,
 }
 #gkMainbody .itemReadMore,
 #gkMainbody .readmore > a {
-	background-color: #4d90fe;
+	background-color: #9cba5d;
 }
 #gkMainbody .itemReadMore:active,
 #gkMainbody .itemReadMore:focus,
