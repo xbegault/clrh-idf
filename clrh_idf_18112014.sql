@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Mar 18 Novembre 2014 à 14:36
+-- Généré le :  Mar 18 Novembre 2014 à 14:40
 -- Version du serveur :  5.6.20
 -- Version de PHP :  5.5.15
 
@@ -38,11 +38,6 @@ CREATE TABLE IF NOT EXISTS `clrh_assets` (
   `rules` varchar(5120) NOT NULL COMMENT 'JSON encoded access control.'
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=124 ;
 
---
--- Vider la table avant d'insérer `clrh_assets`
---
-
-TRUNCATE TABLE `clrh_assets`;
 --
 -- Contenu de la table `clrh_assets`
 --
@@ -167,11 +162,6 @@ CREATE TABLE IF NOT EXISTS `clrh_associations` (
   `key` char(32) NOT NULL COMMENT 'The key for the association computed from an md5 on associated ids.'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Vider la table avant d'insérer `clrh_associations`
---
-
-TRUNCATE TABLE `clrh_associations`;
 -- --------------------------------------------------------
 
 --
@@ -211,11 +201,6 @@ CREATE TABLE IF NOT EXISTS `clrh_banners` (
   `language` char(7) NOT NULL DEFAULT ''
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- Vider la table avant d'insérer `clrh_banners`
---
-
-TRUNCATE TABLE `clrh_banners`;
 -- --------------------------------------------------------
 
 --
@@ -240,11 +225,6 @@ CREATE TABLE IF NOT EXISTS `clrh_banner_clients` (
   `track_impressions` tinyint(4) NOT NULL DEFAULT '-1'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- Vider la table avant d'insérer `clrh_banner_clients`
---
-
-TRUNCATE TABLE `clrh_banner_clients`;
 -- --------------------------------------------------------
 
 --
@@ -259,11 +239,6 @@ CREATE TABLE IF NOT EXISTS `clrh_banner_tracks` (
   `count` int(10) unsigned NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Vider la table avant d'insérer `clrh_banner_tracks`
---
-
-TRUNCATE TABLE `clrh_banner_tracks`;
 -- --------------------------------------------------------
 
 --
@@ -300,11 +275,6 @@ CREATE TABLE IF NOT EXISTS `clrh_categories` (
   `language` char(7) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
 
---
--- Vider la table avant d'insérer `clrh_categories`
---
-
-TRUNCATE TABLE `clrh_categories`;
 --
 -- Contenu de la table `clrh_categories`
 --
@@ -371,11 +341,6 @@ CREATE TABLE IF NOT EXISTS `clrh_contact_details` (
   `publish_down` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- Vider la table avant d'insérer `clrh_contact_details`
---
-
-TRUNCATE TABLE `clrh_contact_details`;
 -- --------------------------------------------------------
 
 --
@@ -420,11 +385,6 @@ CREATE TABLE IF NOT EXISTS `clrh_content` (
   `xreference` varchar(50) NOT NULL COMMENT 'A reference to enable linkages to external data sets.'
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=97 ;
 
---
--- Vider la table avant d'insérer `clrh_content`
---
-
-TRUNCATE TABLE `clrh_content`;
 --
 -- Contenu de la table `clrh_content`
 --
@@ -548,11 +508,6 @@ CREATE TABLE IF NOT EXISTS `clrh_content_frontpage` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Vider la table avant d'insérer `clrh_content_frontpage`
---
-
-TRUNCATE TABLE `clrh_content_frontpage`;
---
 -- Contenu de la table `clrh_content_frontpage`
 --
 
@@ -574,11 +529,6 @@ CREATE TABLE IF NOT EXISTS `clrh_content_rating` (
   `lastip` varchar(50) NOT NULL DEFAULT ''
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Vider la table avant d'insérer `clrh_content_rating`
---
-
-TRUNCATE TABLE `clrh_content_rating`;
 -- --------------------------------------------------------
 
 --
@@ -591,11 +541,6 @@ CREATE TABLE IF NOT EXISTS `clrh_core_log_searches` (
   `hits` int(10) unsigned NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Vider la table avant d'insérer `clrh_core_log_searches`
---
-
-TRUNCATE TABLE `clrh_core_log_searches`;
 -- --------------------------------------------------------
 
 --
@@ -623,11 +568,6 @@ CREATE TABLE IF NOT EXISTS `clrh_extensions` (
   `state` int(11) DEFAULT '0'
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10044 ;
 
---
--- Vider la table avant d'insérer `clrh_extensions`
---
-
-TRUNCATE TABLE `clrh_extensions`;
 --
 -- Contenu de la table `clrh_extensions`
 --
@@ -832,11 +772,6 @@ CREATE TABLE IF NOT EXISTS `clrh_finder_filters` (
   `params` mediumtext
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- Vider la table avant d'insérer `clrh_finder_filters`
---
-
-TRUNCATE TABLE `clrh_finder_filters`;
 -- --------------------------------------------------------
 
 --
@@ -866,11 +801,6 @@ CREATE TABLE IF NOT EXISTS `clrh_finder_links` (
   `object` mediumblob NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- Vider la table avant d'insérer `clrh_finder_links`
---
-
-TRUNCATE TABLE `clrh_finder_links`;
 -- --------------------------------------------------------
 
 --
@@ -884,11 +814,6 @@ CREATE TABLE IF NOT EXISTS `clrh_finder_links_terms0` (
   `weight` float unsigned NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Vider la table avant d'insérer `clrh_finder_links_terms0`
---
-
-TRUNCATE TABLE `clrh_finder_links_terms0`;
 -- --------------------------------------------------------
 
 --
@@ -902,11 +827,6 @@ CREATE TABLE IF NOT EXISTS `clrh_finder_links_terms1` (
   `weight` float unsigned NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Vider la table avant d'insérer `clrh_finder_links_terms1`
---
-
-TRUNCATE TABLE `clrh_finder_links_terms1`;
 -- --------------------------------------------------------
 
 --
@@ -920,11 +840,6 @@ CREATE TABLE IF NOT EXISTS `clrh_finder_links_terms2` (
   `weight` float unsigned NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Vider la table avant d'insérer `clrh_finder_links_terms2`
---
-
-TRUNCATE TABLE `clrh_finder_links_terms2`;
 -- --------------------------------------------------------
 
 --
@@ -938,11 +853,6 @@ CREATE TABLE IF NOT EXISTS `clrh_finder_links_terms3` (
   `weight` float unsigned NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Vider la table avant d'insérer `clrh_finder_links_terms3`
---
-
-TRUNCATE TABLE `clrh_finder_links_terms3`;
 -- --------------------------------------------------------
 
 --
@@ -956,11 +866,6 @@ CREATE TABLE IF NOT EXISTS `clrh_finder_links_terms4` (
   `weight` float unsigned NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Vider la table avant d'insérer `clrh_finder_links_terms4`
---
-
-TRUNCATE TABLE `clrh_finder_links_terms4`;
 -- --------------------------------------------------------
 
 --
@@ -974,11 +879,6 @@ CREATE TABLE IF NOT EXISTS `clrh_finder_links_terms5` (
   `weight` float unsigned NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Vider la table avant d'insérer `clrh_finder_links_terms5`
---
-
-TRUNCATE TABLE `clrh_finder_links_terms5`;
 -- --------------------------------------------------------
 
 --
@@ -992,11 +892,6 @@ CREATE TABLE IF NOT EXISTS `clrh_finder_links_terms6` (
   `weight` float unsigned NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Vider la table avant d'insérer `clrh_finder_links_terms6`
---
-
-TRUNCATE TABLE `clrh_finder_links_terms6`;
 -- --------------------------------------------------------
 
 --
@@ -1010,11 +905,6 @@ CREATE TABLE IF NOT EXISTS `clrh_finder_links_terms7` (
   `weight` float unsigned NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Vider la table avant d'insérer `clrh_finder_links_terms7`
---
-
-TRUNCATE TABLE `clrh_finder_links_terms7`;
 -- --------------------------------------------------------
 
 --
@@ -1028,11 +918,6 @@ CREATE TABLE IF NOT EXISTS `clrh_finder_links_terms8` (
   `weight` float unsigned NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Vider la table avant d'insérer `clrh_finder_links_terms8`
---
-
-TRUNCATE TABLE `clrh_finder_links_terms8`;
 -- --------------------------------------------------------
 
 --
@@ -1046,11 +931,6 @@ CREATE TABLE IF NOT EXISTS `clrh_finder_links_terms9` (
   `weight` float unsigned NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Vider la table avant d'insérer `clrh_finder_links_terms9`
---
-
-TRUNCATE TABLE `clrh_finder_links_terms9`;
 -- --------------------------------------------------------
 
 --
@@ -1064,11 +944,6 @@ CREATE TABLE IF NOT EXISTS `clrh_finder_links_termsa` (
   `weight` float unsigned NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Vider la table avant d'insérer `clrh_finder_links_termsa`
---
-
-TRUNCATE TABLE `clrh_finder_links_termsa`;
 -- --------------------------------------------------------
 
 --
@@ -1082,11 +957,6 @@ CREATE TABLE IF NOT EXISTS `clrh_finder_links_termsb` (
   `weight` float unsigned NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Vider la table avant d'insérer `clrh_finder_links_termsb`
---
-
-TRUNCATE TABLE `clrh_finder_links_termsb`;
 -- --------------------------------------------------------
 
 --
@@ -1100,11 +970,6 @@ CREATE TABLE IF NOT EXISTS `clrh_finder_links_termsc` (
   `weight` float unsigned NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Vider la table avant d'insérer `clrh_finder_links_termsc`
---
-
-TRUNCATE TABLE `clrh_finder_links_termsc`;
 -- --------------------------------------------------------
 
 --
@@ -1118,11 +983,6 @@ CREATE TABLE IF NOT EXISTS `clrh_finder_links_termsd` (
   `weight` float unsigned NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Vider la table avant d'insérer `clrh_finder_links_termsd`
---
-
-TRUNCATE TABLE `clrh_finder_links_termsd`;
 -- --------------------------------------------------------
 
 --
@@ -1136,11 +996,6 @@ CREATE TABLE IF NOT EXISTS `clrh_finder_links_termse` (
   `weight` float unsigned NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Vider la table avant d'insérer `clrh_finder_links_termse`
---
-
-TRUNCATE TABLE `clrh_finder_links_termse`;
 -- --------------------------------------------------------
 
 --
@@ -1154,11 +1009,6 @@ CREATE TABLE IF NOT EXISTS `clrh_finder_links_termsf` (
   `weight` float unsigned NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Vider la table avant d'insérer `clrh_finder_links_termsf`
---
-
-TRUNCATE TABLE `clrh_finder_links_termsf`;
 -- --------------------------------------------------------
 
 --
@@ -1175,11 +1025,6 @@ CREATE TABLE IF NOT EXISTS `clrh_finder_taxonomy` (
   `ordering` tinyint(1) unsigned NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
---
--- Vider la table avant d'insérer `clrh_finder_taxonomy`
---
-
-TRUNCATE TABLE `clrh_finder_taxonomy`;
 --
 -- Contenu de la table `clrh_finder_taxonomy`
 --
@@ -1199,11 +1044,6 @@ CREATE TABLE IF NOT EXISTS `clrh_finder_taxonomy_map` (
   `node_id` int(10) unsigned NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Vider la table avant d'insérer `clrh_finder_taxonomy_map`
---
-
-TRUNCATE TABLE `clrh_finder_taxonomy_map`;
 -- --------------------------------------------------------
 
 --
@@ -1222,11 +1062,6 @@ CREATE TABLE IF NOT EXISTS `clrh_finder_terms` (
   `links` int(10) NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- Vider la table avant d'insérer `clrh_finder_terms`
---
-
-TRUNCATE TABLE `clrh_finder_terms`;
 -- --------------------------------------------------------
 
 --
@@ -1239,11 +1074,6 @@ CREATE TABLE IF NOT EXISTS `clrh_finder_terms_common` (
   `language` varchar(3) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Vider la table avant d'insérer `clrh_finder_terms_common`
---
-
-TRUNCATE TABLE `clrh_finder_terms_common`;
 --
 -- Contenu de la table `clrh_finder_terms_common`
 --
@@ -1381,11 +1211,6 @@ CREATE TABLE IF NOT EXISTS `clrh_finder_tokens` (
   `context` tinyint(1) unsigned NOT NULL DEFAULT '2'
 ) ENGINE=MEMORY DEFAULT CHARSET=utf8;
 
---
--- Vider la table avant d'insérer `clrh_finder_tokens`
---
-
-TRUNCATE TABLE `clrh_finder_tokens`;
 -- --------------------------------------------------------
 
 --
@@ -1406,11 +1231,6 @@ CREATE TABLE IF NOT EXISTS `clrh_finder_tokens_aggregate` (
   `total_weight` float unsigned NOT NULL
 ) ENGINE=MEMORY DEFAULT CHARSET=utf8;
 
---
--- Vider la table avant d'insérer `clrh_finder_tokens_aggregate`
---
-
-TRUNCATE TABLE `clrh_finder_tokens_aggregate`;
 -- --------------------------------------------------------
 
 --
@@ -1424,11 +1244,6 @@ CREATE TABLE IF NOT EXISTS `clrh_finder_types` (
   `mime` varchar(100) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- Vider la table avant d'insérer `clrh_finder_types`
---
-
-TRUNCATE TABLE `clrh_finder_types`;
 -- --------------------------------------------------------
 
 --
@@ -1467,11 +1282,6 @@ CREATE TABLE IF NOT EXISTS `clrh_jcomments` (
   `editor` varchar(50) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- Vider la table avant d'insérer `clrh_jcomments`
---
-
-TRUNCATE TABLE `clrh_jcomments`;
 -- --------------------------------------------------------
 
 --
@@ -1493,11 +1303,6 @@ CREATE TABLE IF NOT EXISTS `clrh_jcomments_blacklist` (
   `editor` varchar(50) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- Vider la table avant d'insérer `clrh_jcomments_blacklist`
---
-
-TRUNCATE TABLE `clrh_jcomments_blacklist`;
 -- --------------------------------------------------------
 
 --
@@ -1528,11 +1333,6 @@ CREATE TABLE IF NOT EXISTS `clrh_jcomments_custom_bbcodes` (
   `checked_out_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=16 ;
 
---
--- Vider la table avant d'insérer `clrh_jcomments_custom_bbcodes`
---
-
-TRUNCATE TABLE `clrh_jcomments_custom_bbcodes`;
 --
 -- Contenu de la table `clrh_jcomments_custom_bbcodes`
 --
@@ -1573,11 +1373,6 @@ CREATE TABLE IF NOT EXISTS `clrh_jcomments_mailq` (
   `session_id` varchar(200) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- Vider la table avant d'insérer `clrh_jcomments_mailq`
---
-
-TRUNCATE TABLE `clrh_jcomments_mailq`;
 -- --------------------------------------------------------
 
 --
@@ -1599,11 +1394,6 @@ CREATE TABLE IF NOT EXISTS `clrh_jcomments_objects` (
   `modified` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
---
--- Vider la table avant d'insérer `clrh_jcomments_objects`
---
-
-TRUNCATE TABLE `clrh_jcomments_objects`;
 --
 -- Contenu de la table `clrh_jcomments_objects`
 --
@@ -1631,11 +1421,6 @@ CREATE TABLE IF NOT EXISTS `clrh_jcomments_reports` (
   `status` tinyint(1) unsigned NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- Vider la table avant d'insérer `clrh_jcomments_reports`
---
-
-TRUNCATE TABLE `clrh_jcomments_reports`;
 -- --------------------------------------------------------
 
 --
@@ -1650,11 +1435,6 @@ CREATE TABLE IF NOT EXISTS `clrh_jcomments_settings` (
   `value` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Vider la table avant d'insérer `clrh_jcomments_settings`
---
-
-TRUNCATE TABLE `clrh_jcomments_settings`;
 --
 -- Contenu de la table `clrh_jcomments_settings`
 --
@@ -1772,11 +1552,6 @@ CREATE TABLE IF NOT EXISTS `clrh_jcomments_smilies` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=19 ;
 
 --
--- Vider la table avant d'insérer `clrh_jcomments_smilies`
---
-
-TRUNCATE TABLE `clrh_jcomments_smilies`;
---
 -- Contenu de la table `clrh_jcomments_smilies`
 --
 
@@ -1822,11 +1597,6 @@ CREATE TABLE IF NOT EXISTS `clrh_jcomments_subscriptions` (
   `checked_out_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- Vider la table avant d'insérer `clrh_jcomments_subscriptions`
---
-
-TRUNCATE TABLE `clrh_jcomments_subscriptions`;
 -- --------------------------------------------------------
 
 --
@@ -1841,11 +1611,6 @@ CREATE TABLE IF NOT EXISTS `clrh_jcomments_version` (
   `updated` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Vider la table avant d'insérer `clrh_jcomments_version`
---
-
-TRUNCATE TABLE `clrh_jcomments_version`;
 -- --------------------------------------------------------
 
 --
@@ -1862,11 +1627,6 @@ CREATE TABLE IF NOT EXISTS `clrh_jcomments_votes` (
   `value` tinyint(1) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- Vider la table avant d'insérer `clrh_jcomments_votes`
---
-
-TRUNCATE TABLE `clrh_jcomments_votes`;
 -- --------------------------------------------------------
 
 --
@@ -1906,11 +1666,6 @@ CREATE TABLE IF NOT EXISTS `clrh_joomleague_club` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10 ;
 
 --
--- Vider la table avant d'insérer `clrh_joomleague_club`
---
-
-TRUNCATE TABLE `clrh_joomleague_club`;
---
 -- Contenu de la table `clrh_joomleague_club`
 --
 
@@ -1949,11 +1704,6 @@ CREATE TABLE IF NOT EXISTS `clrh_joomleague_division` (
   `modified_by` int(10) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- Vider la table avant d'insérer `clrh_joomleague_division`
---
-
-TRUNCATE TABLE `clrh_joomleague_division`;
 -- --------------------------------------------------------
 
 --
@@ -1980,11 +1730,6 @@ CREATE TABLE IF NOT EXISTS `clrh_joomleague_eventtype` (
   `modified_by` int(10) DEFAULT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
 
---
--- Vider la table avant d'insérer `clrh_joomleague_eventtype`
---
-
-TRUNCATE TABLE `clrh_joomleague_eventtype`;
 --
 -- Contenu de la table `clrh_joomleague_eventtype`
 --
@@ -2017,11 +1762,6 @@ CREATE TABLE IF NOT EXISTS `clrh_joomleague_league` (
   `modified_by` int(10) DEFAULT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
---
--- Vider la table avant d'insérer `clrh_joomleague_league`
---
-
-TRUNCATE TABLE `clrh_joomleague_league`;
 --
 -- Contenu de la table `clrh_joomleague_league`
 --
@@ -2083,11 +1823,6 @@ CREATE TABLE IF NOT EXISTS `clrh_joomleague_match` (
   `alias` varchar(255) NOT NULL DEFAULT ''
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=55 ;
 
---
--- Vider la table avant d'insérer `clrh_joomleague_match`
---
-
-TRUNCATE TABLE `clrh_joomleague_match`;
 --
 -- Contenu de la table `clrh_joomleague_match`
 --
@@ -2155,11 +1890,6 @@ CREATE TABLE IF NOT EXISTS `clrh_joomleague_match_event` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11 ;
 
 --
--- Vider la table avant d'insérer `clrh_joomleague_match_event`
---
-
-TRUNCATE TABLE `clrh_joomleague_match_event`;
---
 -- Contenu de la table `clrh_joomleague_match_event`
 --
 
@@ -2195,11 +1925,6 @@ CREATE TABLE IF NOT EXISTS `clrh_joomleague_match_player` (
   `modified_by` int(10) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- Vider la table avant d'insérer `clrh_joomleague_match_player`
---
-
-TRUNCATE TABLE `clrh_joomleague_match_player`;
 -- --------------------------------------------------------
 
 --
@@ -2219,11 +1944,6 @@ CREATE TABLE IF NOT EXISTS `clrh_joomleague_match_referee` (
   `modified_by` int(10) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- Vider la table avant d'insérer `clrh_joomleague_match_referee`
---
-
-TRUNCATE TABLE `clrh_joomleague_match_referee`;
 -- --------------------------------------------------------
 
 --
@@ -2243,11 +1963,6 @@ CREATE TABLE IF NOT EXISTS `clrh_joomleague_match_staff` (
   `modified_by` int(10) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- Vider la table avant d'insérer `clrh_joomleague_match_staff`
---
-
-TRUNCATE TABLE `clrh_joomleague_match_staff`;
 -- --------------------------------------------------------
 
 --
@@ -2268,11 +1983,6 @@ CREATE TABLE IF NOT EXISTS `clrh_joomleague_match_staff_statistic` (
   `modified_by` int(10) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- Vider la table avant d'insérer `clrh_joomleague_match_staff_statistic`
---
-
-TRUNCATE TABLE `clrh_joomleague_match_staff_statistic`;
 -- --------------------------------------------------------
 
 --
@@ -2293,11 +2003,6 @@ CREATE TABLE IF NOT EXISTS `clrh_joomleague_match_statistic` (
   `modified_by` int(10) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- Vider la table avant d'insérer `clrh_joomleague_match_statistic`
---
-
-TRUNCATE TABLE `clrh_joomleague_match_statistic`;
 -- --------------------------------------------------------
 
 --
@@ -2345,11 +2050,6 @@ CREATE TABLE IF NOT EXISTS `clrh_joomleague_person` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=8 ;
 
 --
--- Vider la table avant d'insérer `clrh_joomleague_person`
---
-
-TRUNCATE TABLE `clrh_joomleague_person`;
---
 -- Contenu de la table `clrh_joomleague_person`
 --
 
@@ -2391,11 +2091,6 @@ CREATE TABLE IF NOT EXISTS `clrh_joomleague_playground` (
   `modified_by` int(10) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- Vider la table avant d'insérer `clrh_joomleague_playground`
---
-
-TRUNCATE TABLE `clrh_joomleague_playground`;
 -- --------------------------------------------------------
 
 --
@@ -2418,11 +2113,6 @@ CREATE TABLE IF NOT EXISTS `clrh_joomleague_position` (
   `modified_by` int(10) DEFAULT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
---
--- Vider la table avant d'insérer `clrh_joomleague_position`
---
-
-TRUNCATE TABLE `clrh_joomleague_position`;
 --
 -- Contenu de la table `clrh_joomleague_position`
 --
@@ -2450,11 +2140,6 @@ CREATE TABLE IF NOT EXISTS `clrh_joomleague_position_eventtype` (
   `modified_by` int(10) DEFAULT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=8 ;
 
---
--- Vider la table avant d'insérer `clrh_joomleague_position_eventtype`
---
-
-TRUNCATE TABLE `clrh_joomleague_position_eventtype`;
 --
 -- Contenu de la table `clrh_joomleague_position_eventtype`
 --
@@ -2486,11 +2171,6 @@ CREATE TABLE IF NOT EXISTS `clrh_joomleague_position_statistic` (
   `modified_by` int(10) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- Vider la table avant d'insérer `clrh_joomleague_position_statistic`
---
-
-TRUNCATE TABLE `clrh_joomleague_position_statistic`;
 -- --------------------------------------------------------
 
 --
@@ -2546,11 +2226,6 @@ CREATE TABLE IF NOT EXISTS `clrh_joomleague_project` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- Vider la table avant d'insérer `clrh_joomleague_project`
---
-
-TRUNCATE TABLE `clrh_joomleague_project`;
---
 -- Contenu de la table `clrh_joomleague_project`
 --
 
@@ -2572,11 +2247,6 @@ CREATE TABLE IF NOT EXISTS `clrh_joomleague_project_position` (
   `modified_by` int(10) DEFAULT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
---
--- Vider la table avant d'insérer `clrh_joomleague_project_position`
---
-
-TRUNCATE TABLE `clrh_joomleague_project_position`;
 --
 -- Contenu de la table `clrh_joomleague_project_position`
 --
@@ -2611,11 +2281,6 @@ CREATE TABLE IF NOT EXISTS `clrh_joomleague_project_referee` (
   `alias` varchar(255) NOT NULL DEFAULT ''
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
---
--- Vider la table avant d'insérer `clrh_joomleague_project_referee`
---
-
-TRUNCATE TABLE `clrh_joomleague_project_referee`;
 --
 -- Contenu de la table `clrh_joomleague_project_referee`
 --
@@ -2663,11 +2328,6 @@ CREATE TABLE IF NOT EXISTS `clrh_joomleague_project_team` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10 ;
 
 --
--- Vider la table avant d'insérer `clrh_joomleague_project_team`
---
-
-TRUNCATE TABLE `clrh_joomleague_project_team`;
---
 -- Contenu de la table `clrh_joomleague_project_team`
 --
 
@@ -2704,11 +2364,6 @@ CREATE TABLE IF NOT EXISTS `clrh_joomleague_round` (
   `modified_by` int(10) DEFAULT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=13 ;
 
---
--- Vider la table avant d'insérer `clrh_joomleague_round`
---
-
-TRUNCATE TABLE `clrh_joomleague_round`;
 --
 -- Contenu de la table `clrh_joomleague_round`
 --
@@ -2748,11 +2403,6 @@ CREATE TABLE IF NOT EXISTS `clrh_joomleague_season` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
--- Vider la table avant d'insérer `clrh_joomleague_season`
---
-
-TRUNCATE TABLE `clrh_joomleague_season`;
---
 -- Contenu de la table `clrh_joomleague_season`
 --
 
@@ -2778,11 +2428,6 @@ CREATE TABLE IF NOT EXISTS `clrh_joomleague_sports_type` (
   `modified_by` int(10) DEFAULT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
---
--- Vider la table avant d'insérer `clrh_joomleague_sports_type`
---
-
-TRUNCATE TABLE `clrh_joomleague_sports_type`;
 --
 -- Contenu de la table `clrh_joomleague_sports_type`
 --
@@ -2817,11 +2462,6 @@ CREATE TABLE IF NOT EXISTS `clrh_joomleague_statistic` (
   `modified_by` int(10) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- Vider la table avant d'insérer `clrh_joomleague_statistic`
---
-
-TRUNCATE TABLE `clrh_joomleague_statistic`;
 -- --------------------------------------------------------
 
 --
@@ -2849,11 +2489,6 @@ CREATE TABLE IF NOT EXISTS `clrh_joomleague_team` (
   `asset_id` int(10) NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10 ;
 
---
--- Vider la table avant d'insérer `clrh_joomleague_team`
---
-
-TRUNCATE TABLE `clrh_joomleague_team`;
 --
 -- Contenu de la table `clrh_joomleague_team`
 --
@@ -2915,11 +2550,6 @@ CREATE TABLE IF NOT EXISTS `clrh_joomleague_team_player` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
 
 --
--- Vider la table avant d'insérer `clrh_joomleague_team_player`
---
-
-TRUNCATE TABLE `clrh_joomleague_team_player`;
---
 -- Contenu de la table `clrh_joomleague_team_player`
 --
 
@@ -2975,11 +2605,6 @@ CREATE TABLE IF NOT EXISTS `clrh_joomleague_team_staff` (
   `alias` varchar(255) NOT NULL DEFAULT ''
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- Vider la table avant d'insérer `clrh_joomleague_team_staff`
---
-
-TRUNCATE TABLE `clrh_joomleague_team_staff`;
 -- --------------------------------------------------------
 
 --
@@ -3004,11 +2629,6 @@ CREATE TABLE IF NOT EXISTS `clrh_joomleague_team_trainingdata` (
   `modified_by` int(10) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- Vider la table avant d'insérer `clrh_joomleague_team_trainingdata`
---
-
-TRUNCATE TABLE `clrh_joomleague_team_trainingdata`;
 -- --------------------------------------------------------
 
 --
@@ -3030,11 +2650,6 @@ CREATE TABLE IF NOT EXISTS `clrh_joomleague_template_config` (
   `modified_by` int(10) DEFAULT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=28 ;
 
---
--- Vider la table avant d'insérer `clrh_joomleague_template_config`
---
-
-TRUNCATE TABLE `clrh_joomleague_template_config`;
 --
 -- Contenu de la table `clrh_joomleague_template_config`
 --
@@ -3098,11 +2713,6 @@ CREATE TABLE IF NOT EXISTS `clrh_joomleague_treeto` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- Vider la table avant d'insérer `clrh_joomleague_treeto`
---
-
-TRUNCATE TABLE `clrh_joomleague_treeto`;
---
 -- Contenu de la table `clrh_joomleague_treeto`
 --
 
@@ -3126,11 +2736,6 @@ CREATE TABLE IF NOT EXISTS `clrh_joomleague_treeto_match` (
   `modified_by` int(10) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- Vider la table avant d'insérer `clrh_joomleague_treeto_match`
---
-
-TRUNCATE TABLE `clrh_joomleague_treeto_match`;
 -- --------------------------------------------------------
 
 --
@@ -3159,11 +2764,6 @@ CREATE TABLE IF NOT EXISTS `clrh_joomleague_treeto_node` (
   `modified_by` int(10) DEFAULT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=16 ;
 
---
--- Vider la table avant d'insérer `clrh_joomleague_treeto_node`
---
-
-TRUNCATE TABLE `clrh_joomleague_treeto_node`;
 --
 -- Contenu de la table `clrh_joomleague_treeto_node`
 --
@@ -3205,11 +2805,6 @@ CREATE TABLE IF NOT EXISTS `clrh_joomleague_version` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- Vider la table avant d'insérer `clrh_joomleague_version`
---
-
-TRUNCATE TABLE `clrh_joomleague_version`;
---
 -- Contenu de la table `clrh_joomleague_version`
 --
 
@@ -3239,11 +2834,6 @@ CREATE TABLE IF NOT EXISTS `clrh_languages` (
   `ordering` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
---
--- Vider la table avant d'insérer `clrh_languages`
---
-
-TRUNCATE TABLE `clrh_languages`;
 --
 -- Contenu de la table `clrh_languages`
 --
@@ -3287,11 +2877,6 @@ CREATE TABLE IF NOT EXISTS `clrh_menu` (
   `client_id` tinyint(4) NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=121 ;
 
---
--- Vider la table avant d'insérer `clrh_menu`
---
-
-TRUNCATE TABLE `clrh_menu`;
 --
 -- Contenu de la table `clrh_menu`
 --
@@ -3355,11 +2940,6 @@ CREATE TABLE IF NOT EXISTS `clrh_menu_types` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- Vider la table avant d'insérer `clrh_menu_types`
---
-
-TRUNCATE TABLE `clrh_menu_types`;
---
 -- Contenu de la table `clrh_menu_types`
 --
 
@@ -3385,11 +2965,6 @@ CREATE TABLE IF NOT EXISTS `clrh_messages` (
   `message` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- Vider la table avant d'insérer `clrh_messages`
---
-
-TRUNCATE TABLE `clrh_messages`;
 -- --------------------------------------------------------
 
 --
@@ -3403,11 +2978,6 @@ CREATE TABLE IF NOT EXISTS `clrh_messages_cfg` (
   `cfg_value` varchar(255) NOT NULL DEFAULT ''
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Vider la table avant d'insérer `clrh_messages_cfg`
---
-
-TRUNCATE TABLE `clrh_messages_cfg`;
 -- --------------------------------------------------------
 
 --
@@ -3435,11 +3005,6 @@ CREATE TABLE IF NOT EXISTS `clrh_modules` (
   `language` char(7) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=113 ;
 
---
--- Vider la table avant d'insérer `clrh_modules`
---
-
-TRUNCATE TABLE `clrh_modules`;
 --
 -- Contenu de la table `clrh_modules`
 --
@@ -3499,11 +3064,6 @@ CREATE TABLE IF NOT EXISTS `clrh_modules_menu` (
   `menuid` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Vider la table avant d'insérer `clrh_modules_menu`
---
-
-TRUNCATE TABLE `clrh_modules_menu`;
 --
 -- Contenu de la table `clrh_modules_menu`
 --
@@ -3578,11 +3138,6 @@ CREATE TABLE IF NOT EXISTS `clrh_newsfeeds` (
   `publish_down` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- Vider la table avant d'insérer `clrh_newsfeeds`
---
-
-TRUNCATE TABLE `clrh_newsfeeds`;
 -- --------------------------------------------------------
 
 --
@@ -3597,11 +3152,6 @@ CREATE TABLE IF NOT EXISTS `clrh_overrider` (
   `file` varchar(255) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- Vider la table avant d'insérer `clrh_overrider`
---
-
-TRUNCATE TABLE `clrh_overrider`;
 -- --------------------------------------------------------
 
 --
@@ -3621,11 +3171,6 @@ CREATE TABLE IF NOT EXISTS `clrh_redirect_links` (
   `modified_date` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
 
---
--- Vider la table avant d'insérer `clrh_redirect_links`
---
-
-TRUNCATE TABLE `clrh_redirect_links`;
 --
 -- Contenu de la table `clrh_redirect_links`
 --
@@ -3649,11 +3194,6 @@ CREATE TABLE IF NOT EXISTS `clrh_schemas` (
   `version_id` varchar(20) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Vider la table avant d'insérer `clrh_schemas`
---
-
-TRUNCATE TABLE `clrh_schemas`;
 --
 -- Contenu de la table `clrh_schemas`
 --
@@ -3681,11 +3221,6 @@ CREATE TABLE IF NOT EXISTS `clrh_session` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Vider la table avant d'insérer `clrh_session`
---
-
-TRUNCATE TABLE `clrh_session`;
---
 -- Contenu de la table `clrh_session`
 --
 
@@ -3709,11 +3244,6 @@ CREATE TABLE IF NOT EXISTS `clrh_template_styles` (
   `params` text NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=8 ;
 
---
--- Vider la table avant d'insérer `clrh_template_styles`
---
-
-TRUNCATE TABLE `clrh_template_styles`;
 --
 -- Contenu de la table `clrh_template_styles`
 --
@@ -3750,11 +3280,6 @@ CREATE TABLE IF NOT EXISTS `clrh_updates` (
   `infourl` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Available Updates' AUTO_INCREMENT=1 ;
 
---
--- Vider la table avant d'insérer `clrh_updates`
---
-
-TRUNCATE TABLE `clrh_updates`;
 -- --------------------------------------------------------
 
 --
@@ -3770,11 +3295,6 @@ CREATE TABLE IF NOT EXISTS `clrh_update_categories` (
   `updatesite` int(11) DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Update Categories' AUTO_INCREMENT=1 ;
 
---
--- Vider la table avant d'insérer `clrh_update_categories`
---
-
-TRUNCATE TABLE `clrh_update_categories`;
 -- --------------------------------------------------------
 
 --
@@ -3791,11 +3311,6 @@ CREATE TABLE IF NOT EXISTS `clrh_update_sites` (
   `last_check_timestamp` bigint(20) DEFAULT '0'
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Update Sites' AUTO_INCREMENT=7 ;
 
---
--- Vider la table avant d'insérer `clrh_update_sites`
---
-
-TRUNCATE TABLE `clrh_update_sites`;
 --
 -- Contenu de la table `clrh_update_sites`
 --
@@ -3820,11 +3335,6 @@ CREATE TABLE IF NOT EXISTS `clrh_update_sites_extensions` (
   `extension_id` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Links extensions to update sites';
 
---
--- Vider la table avant d'insérer `clrh_update_sites_extensions`
---
-
-TRUNCATE TABLE `clrh_update_sites_extensions`;
 --
 -- Contenu de la table `clrh_update_sites_extensions`
 --
@@ -3853,11 +3363,6 @@ CREATE TABLE IF NOT EXISTS `clrh_usergroups` (
   `title` varchar(100) NOT NULL DEFAULT ''
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
 
---
--- Vider la table avant d'insérer `clrh_usergroups`
---
-
-TRUNCATE TABLE `clrh_usergroups`;
 --
 -- Contenu de la table `clrh_usergroups`
 --
@@ -3897,11 +3402,6 @@ CREATE TABLE IF NOT EXISTS `clrh_users` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=854 ;
 
 --
--- Vider la table avant d'insérer `clrh_users`
---
-
-TRUNCATE TABLE `clrh_users`;
---
 -- Contenu de la table `clrh_users`
 --
 
@@ -3933,11 +3433,6 @@ CREATE TABLE IF NOT EXISTS `clrh_user_notes` (
   `publish_down` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- Vider la table avant d'insérer `clrh_user_notes`
---
-
-TRUNCATE TABLE `clrh_user_notes`;
 -- --------------------------------------------------------
 
 --
@@ -3952,11 +3447,6 @@ CREATE TABLE IF NOT EXISTS `clrh_user_profiles` (
   `ordering` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Simple user profile storage table';
 
---
--- Vider la table avant d'insérer `clrh_user_profiles`
---
-
-TRUNCATE TABLE `clrh_user_profiles`;
 -- --------------------------------------------------------
 
 --
@@ -3969,11 +3459,6 @@ CREATE TABLE IF NOT EXISTS `clrh_user_usergroup_map` (
   `group_id` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Foreign Key to #__usergroups.id'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Vider la table avant d'insérer `clrh_user_usergroup_map`
---
-
-TRUNCATE TABLE `clrh_user_usergroup_map`;
 --
 -- Contenu de la table `clrh_user_usergroup_map`
 --
@@ -3995,11 +3480,6 @@ CREATE TABLE IF NOT EXISTS `clrh_viewlevels` (
   `rules` varchar(5120) NOT NULL COMMENT 'JSON encoded access control.'
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
---
--- Vider la table avant d'insérer `clrh_viewlevels`
---
-
-TRUNCATE TABLE `clrh_viewlevels`;
 --
 -- Contenu de la table `clrh_viewlevels`
 --
@@ -4049,11 +3529,6 @@ CREATE TABLE IF NOT EXISTS `clrh_weblinks` (
   `publish_down` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- Vider la table avant d'insérer `clrh_weblinks`
---
-
-TRUNCATE TABLE `clrh_weblinks`;
 --
 -- Index pour les tables exportées
 --
