@@ -32,6 +32,11 @@ a:focus,
 #k2Container article header h2 a:hover {
 	color: #9CBA5D;
 }
+
+#gkMainbody .pagenav  a{
+	color: #FFF
+}
+
 #gkLogo.cssLogo {
 	background-color: #4d90fe
 }

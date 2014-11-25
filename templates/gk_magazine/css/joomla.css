@@ -22,7 +22,7 @@ input[type="email"] {
 	-o-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	border: 1px solid #e5e5e5;
-	font-size: 16px;
+	font-size: 12px;
 	box-sizing: border-box;
 	font-weight: 300;
 	color: #777;
@@ -304,7 +304,7 @@ section.blog .children h3 {
 }
 
 table {
-	margin-bottom: 20px;
+	/*margin-bottom: 20px;*/
 	width: 100%
 }
 

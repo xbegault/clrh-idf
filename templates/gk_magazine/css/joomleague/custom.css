@@ -1,9 +1,9 @@
 a.jlcCalendarDay {
-	font: bold 12px sans-serif !important;
+	font: bold 1em sans-serif !important;
 }
 
 table.jlcCalendar {
-	font: normal 12px sans-serif !important;
+	font: normal 1em sans-serif !important;
 }
 
 table.jlcCalendar tbody tr td {
@@ -33,4 +33,28 @@ div.joomleague  span, div.joomleague a {
 
 div.joomleague  span:hover, div.joomleague  a:hover {
 	/*color: #FFF !important;*/
+}
+
+table.eventsranking a{
+	font-size: 12px;
+}
+
+table.eventsranking td.eventtype {
+	display: none;
+}
+
+table.eventsranking tbody tr th, table.eventsranking tbody tr td {
+	padding: .1em;
+}
+table.eventsranking tbody tr td {
+		padding-bottom: 1em;
+}
+
+
+table.eventsranking tbody tr:hover {
+	background-color: #FFF;
+}
+
+table.eventsranking .sectiontableentry1:hover, table.eventsranking .sectiontableentry2:hover {
+	background-color: #F0F0F0;
 }

@@ -1,0 +1,1 @@
+ALTER TABLE  "#__eventgallery_folder" ADD "hits" integer NOT NULL default '0' AFTER "text";
