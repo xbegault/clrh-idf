@@ -18,6 +18,15 @@
 	display: block;
 	margin: 0;
 	position: relative;
+		  background-color: #FFF;
+	  -moz-box-shadow: 5px 5px 2px 0px #656565;
+	  -webkit-box-shadow: 5px 5px 2px 0px #656565;
+	  -o-box-shadow: 5px 5px 2px 0px #656565;
+	  box-shadow: 5px 5px 2px 0px #656565;
+	  -moz-border-radius: 2px;
+	  -webkit-border-radius: 2px;
+	  border-radius: 2px;
+	  padding: .8em;
 }
 .gkMenu > ul > li {
 	width: 100%;

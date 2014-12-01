@@ -67,7 +67,7 @@ class GKTemplateLayout {
 		// generate content wrap width
 		$this->API->addCSSRule('#gkContentWrap { width: '.$contentwrap_width.'%; }' . "\n");
 		// set the max width for the page
-		$this->API->addCSSRule('.gkPage { max-width: '.$template_width.'px; }' . "\n");
+		//$this->API->addCSSRule('.gkPage { max-width: '.$template_width.'px; }' . "\n");
 		// generate the data attributes
 		echo ' data-tablet-width="'.($tablet_width).'" data-mobile-width="'.($mobile_width).'"';
 	}

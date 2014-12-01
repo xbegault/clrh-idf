@@ -141,12 +141,12 @@ body[data-layout="left"] .gkPage { margin: 0!important; }
 /* Logo  */
 
 #gkLogo {
-	height: 150px;
+	height: auto;
 	margin: 5px 30px 0 0;
 	padding: 0;
 	text-indent: -999em;
 	text-shadow: none;
-	width: 700px;
+	width: 60%;
 	display: block;
 	float: left;
 	-webkit-transition: background-color .3s linear;
@@ -154,12 +154,13 @@ body[data-layout="left"] .gkPage { margin: 0!important; }
 	-ms-transition: background-color .3s linear;
 	-o-transition: background-color .3s linear;
 	transition: background-color .3s linear;
+	margin-bottom: 1em;
 }
 #gkLogo img {
 	display: block;
 	margin: 0;
-	width: 700px;
-	height: 150px;
+	width: 100%;
+	height: 100% !important;
 }
 #gkLogo.cssLogo {
 	background: #4d90fe url('../images/logo.png') no-repeat 0 0;
@@ -199,8 +200,9 @@ body[data-layout="left"] .gkPage { margin: 0!important; }
 /* userarea */
 
 #gkUserArea {
-	float: right;
-	margin: 38px 0 0 0;
+	float:left;
+	/*float: left;
+	margin: 5% 0 0 16%;*/
 }
 #gkUserArea .gk-icon-arrow {
 	font-size: 20px;

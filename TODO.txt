@@ -1,0 +1,8 @@
+TODO:
+
+1/ Mettre à jour les matchs avec FDM
+2/ Régler problème slide + résultats sur les articules en actualités
+3/ Rentrer toutes les coordonnées des terrains
+
+
+FAIT :
