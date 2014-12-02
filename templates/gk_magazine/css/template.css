@@ -448,8 +448,8 @@ body[data-layout="left"] .gkPage { margin: 0!important; }
 #gkBreadcrumb {
 	background: transparent;
 	border-bottom: 1px solid #e5e5e5;
-	margin-bottom: 30px;
-	padding: 14px 0 15px;
+	margin-bottom: 1em;
+	padding: .5em 0 .5em;
 }
 #gkBreadcrumb .breadcrumbs {
 	float: left;
