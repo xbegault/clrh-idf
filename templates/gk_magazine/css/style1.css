@@ -244,24 +244,29 @@ article header h2 a:hover {
 .gkMenu a:hover,
 .gkMenu a:active,
 .gkMenu a:focus,
-.gkMenu li.active > a {
+/*.gkMenu li.active*/ > a {
 	color: #9CBA5D;
 }
 .gkMainMenu1 .gkMenu > ul li div.childcontent,
 .gkMainMenu2 .gkMenu > ul li li div.childcontent {
-	background: #4d90fe;
+	background: #9CBA5D;
 }
 .gkMainMenu1 .gkMenu > ul li div.childcontent-inner,
 .gkMainMenu2 .gkMenu > ul li li div.childcontent-inner {
-	background: #4d90fe;
+	background: #9CBA5D;
 }
 .gkMainMenu1 .gkMenu > ul li div.childcontent li,
 .gkMainMenu2 .gkMenu > ul li li div.childcontent li {
-	border-top: 1px solid #659fff;
+	border-top: 1px solid #FFF;
 }
 .gkMainMenu1 .gkMenu > ul li div.childcontent li:hover,
 .gkMainMenu2 .gkMenu > ul li li div.childcontent li:hover {
-	background: #3c82f6;
+	background: #e5e5e5;
+}
+
+.gkMainMenu1 .gkMenu > ul li div.childcontent li:hover a,
+.gkMainMenu2 .gkMenu > ul li li div.childcontent li:hover a{
+	color: #fff;
 }
 .gkMainMenu1 .gkMenu > ul li div.childcontent small,
 .gkMainMenu2 .gkMenu > ul li li div.childcontent small {

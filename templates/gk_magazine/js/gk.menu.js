@@ -32,7 +32,8 @@ window.addEvent('load', function() {
         var base = document.id('gkExtraMenu');
 
         if($GKMenu && ($GKMenu.height || $GKMenu.width)) {     
-            var gk_selector = base.getParent().hasClass('gkMainMenu2') ? 'li li.haschild' : 'li.haschild';
+            //var gk_selector = base.getParent().hasClass('gkMainMenu2') ? 'li li.haschild' : 'li.haschild';
+			var gk_selector = base.getParent().hasClass('gkMainMenu2') ? 'li.haschild' : 'li.haschild';
             base.getElements(gk_selector).each(function(el){     
                 if(el.getElement('.childcontent')) {
                     var content = el.getElement('.childcontent');

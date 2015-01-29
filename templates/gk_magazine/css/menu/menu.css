@@ -65,8 +65,10 @@
 }
 .gkMainMenu1 .gkMenu > ul > li .childcontent,
 .gkMainMenu2 .gkMenu > ul > li li .childcontent {
-	margin-left: 100px;
-	margin-top: -35px!important;
+	/*margin-left: 35px;*/
+	/*margin-top: -35px%!important;*/
+	margin-left: 85%;
+	margin-top: -30px!important;
 }
 .gkMainMenu1 .gkMenu > ul > li .childcontent .childcontent,
 .gkMainMenu2 .gkMenu > ul > li .childcontent .childcontent {
@@ -115,7 +117,8 @@
 .gkMenu a:active,
 .gkMenu a:focus,
 .gkMenu li.active > a {
-	color: #4d90fe;
+	/*color: #4d90fe;*/
+	color: #363636;
 }
 
 .gkMainMenu2 .gkMenu > ul ul {
@@ -152,7 +155,7 @@
 }
 .gkMainMenu1 .gkMenu > ul li div.childcontent a,
 .gkMainMenu2 .gkMenu > ul li li div.childcontent a {
-	color: #fff;
+	color: #363636;
 	display: block;
 	padding: 5px 16px;
 }
