@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  ci_mysql:
+    container_name: ci_mysql
+    build: ./docker/mysql
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_DATABASE=hbm2014C
+      - MYSQL_ROOT_PASSWORD=wordpress
+    network_mode: bridge
+
+  ci_web:
+    depends_on:
+      - ci_mysql
+    container_name: ci_web
+    build: ./docker/web
+    ports:
+      - 9090:80
+    links:
+      - wp_mysql
+      - wp_memcached
+    volumes:
+      - ./:/var/www/html
